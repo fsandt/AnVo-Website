@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Ink - Tattoo Artist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">Luna Ink</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Über mich</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#calendar">Termine</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+            <div class="mobile-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content fade-in">
+            <h1>Luna Ink</h1>
+            <p>Kunstvolle Tattoos mit Leidenschaft und Präzision</p>
+            <a href="#contact" class="cta-button">Termin vereinbaren</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="fade-in">Über mich</h2>
+        <div class="about-content">
+            <div class="about-image fade-in">
+                [Porträtfoto hier einfügen]
+            </div>
+            <div class="about-text fade-in">
+                <p>Willkommen in meiner Welt der Tätowierkunst! Ich bin Luna, eine leidenschaftliche Tätowiererin mit über 8 Jahren Erfahrung in der Branche. Meine Spezialität liegt in realistischen Porträts, filigranen Linienarbeiten und abstrakten Designs.</p>
+                <p>Jedes Tattoo erzählt eine Geschichte, und ich helfe dir dabei, deine persönliche Geschichte auf einzigartige Weise auf deiner Haut zum Leben zu erwecken. Mit höchsten Hygienestandards und modernster Ausrüstung sorge ich dafür, dass dein Tattoo-Erlebnis sicher und unvergesslich wird.</p>
+                <p>Lass uns gemeinsam dein Traum-Tattoo verwirklichen!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="section">
+        <h2 class="fade-in">Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="portfolio-item fade-in" onclick="openModal('portfolio1')">
+                <div class="portfolio-image">[Tattoo Bild 1]</div>
+                <div class="portfolio-info">
+                    <h3>Realistisches Portrait</h3>
+                    <p>Schwarz-Grau Porträt mit feinen Details</p>
+                </div>
+            </div>
+            <div class="portfolio-item fade-in" onclick="openModal('portfolio2')">
+                <div class="portfolio-image">[Tattoo Bild 2]</div>
+                <div class="portfolio-info">
+                    <h3>Geometrisches Design</h3>
+                    <p>Moderne Linienführung mit abstrakten Elementen</p>
+                </div>
+            </div>
+            <div class="portfolio-item fade-in" onclick="openModal('portfolio3')">
+                <div class="portfolio-image">[Tattoo Bild 3]</div>
+                <div class="portfolio-info">
+                    <h3>Farbiges Mandala</h3>
+                    <p>Spirituelles Design in lebendigen Farben</p>
+                </div>
+            </div>
+            <div class="portfolio-item fade-in" onclick="openModal('portfolio4')">
+                <div class="portfolio-image">[Tattoo Bild 4]</div>
+                <div class="portfolio-info">
+                    <h3>Watercolor Style</h3>
+                    <p>Aquarell-Technik mit fließenden Übergängen</p>
+                </div>
+            </div>
+            <div class="portfolio-item fade-in" onclick="openModal('portfolio5')">
+                <div class="portfolio-image">[Tattoo Bild 5]</div>
+                <div class="portfolio-info">
+                    <h3>Tribal Art</h3>
+                    <p>Traditionelle Muster mit modernem Twist</p>
+                </div>
+            </div>
+            <div class="portfolio-item fade-in" onclick="openModal('portfolio6')">
+                <div class="portfolio-image">[Tattoo Bild 6]</div>
+                <div class="portfolio-info">
+                    <h3>Minimalistisch</h3>
+                    <p>Einfache Eleganz mit großer Wirkung</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendar Section -->
+    <section id="calendar" class="section">
+        <h2 class="fade-in">Terminkalender</h2>
+        <div class="calendar-container fade-in">
+            <div class="calendar-header">
+                <button class="calendar-nav" onclick="previousMonth()">‹ Zurück</button>
+                <h3 id="currentMonth">Juni 2025</h3>
+                <button class="calendar-nav" onclick="nextMonth()">Weiter ›</button>
+            </div>
+            <div class="calendar-grid" id="calendarGrid">
+                <!-- Calendar will be generated by JavaScript -->
+            </div>
+            <div style="margin-top: 2rem; text-align: center; color: #888888;">
+                <p><span style="color: #ffffff;">●</span> Verfügbar &nbsp;&nbsp; <span style="color: #666666;">●</span> Belegt</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="fade-in">Kontakt</h2>
+        <div class="contact-content">
+            <div class="contact-info fade-in">
+                <h3>Studio Informationen</h3>
+                <p><strong>Adresse:</strong><br>
+                Kunststraße 42<br>
+                12345 Musterstadt</p>
+                
+                <p><strong>Telefon:</strong><br>
+                +49 123 456 7890</p>
+                
+                <p><strong>E-Mail:</strong><br>
+                luna@lunaink.de</p>
+                
+                <p><strong>Öffnungszeiten:</strong><br>
+                Mo-Fr: 10:00 - 19:00 Uhr<br>
+                Sa: 10:00 - 16:00 Uhr<br>
+                So: Geschlossen</p>
+
+                <p><strong>Social Media:</strong><br>
+                Instagram: @luna_ink_tattoo<br>
+                Facebook: Luna Ink Studio</p>
+            </div>
+            <div class="contact-form fade-in">
+                <h3>Nachricht senden</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-Mail</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Betreff</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Nachricht</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="cta-button">Nachricht senden</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-links">
+            <a href="#impressum" onclick="openModal('impressum')">Impressum</a>
+            <a href="#datenschutz" onclick="openModal('datenschutz')">Datenschutz</a>
+            <a href="#agb" onclick="openModal('agb')">AGB</a>
+        </div>
+        <p>&copy; 2025 Luna Ink. Alle Rechte vorbehalten.</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-body">
+                <!-- Modal content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
