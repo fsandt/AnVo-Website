@@ -129,22 +129,20 @@ function openModal(type) {
             content = `
                 <h2>Impressum</h2>
                 <p><strong>Angaben gemäß § 5 TMG:</strong></p>
-                <p>Luna Ink Studio<br>
+                <p>AnVo Studio<br>
                 Luna Müller<br>
-                Kunststraße 42<br>
-                12345 Musterstadt</p>
+                Leipzig Südvorstadt</p>
                 
                 <p><strong>Kontakt:</strong><br>
-                Telefon: +49 123 456 7890<br>
-                E-Mail: luna@lunaink.de</p>
+                Telefon: Auf Anfrage<br>
+                E-Mail: anna.vogelw@googlemail.com</p>
                 
                 <p><strong>Umsatzsteuer-ID:</strong><br>
                 Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz: DE123456789</p>
                 
                 <p><strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</strong><br>
                 Luna Müller<br>
-                Kunststraße 42<br>
-                12345 Musterstadt</p>
+                Leipzig Südvorstadt</p>
             `;
             break;
         case 'datenschutz':
@@ -167,7 +165,7 @@ function openModal(type) {
             content = `
                 <h2>Allgemeine Geschäftsbedingungen</h2>
                 <p><strong>1. Geltungsbereich</strong></p>
-                <p>Diese Geschäftsbedingungen gelten für alle Verträge zwischen Luna Ink Studio und ihren Kunden.</p>
+                <p>Diese Geschäftsbedingungen gelten für alle Verträge zwischen AnVo Studio und ihren Kunden.</p>
                 
                 <p><strong>2. Terminvereinbarung</strong></p>
                 <p>Termine werden nur nach vorheriger Absprache vergeben. Eine Anzahlung von 50% ist bei Terminvereinbarung fällig.</p>
@@ -207,13 +205,24 @@ window.onclick = function(event) {
 
 // Form submission
 document.addEventListener('DOMContentLoaded', function() {
-    const form = document.querySelector('form');
+    const form = document.getElementById('contact-form');
     if (form) {
         form.addEventListener('submit', function(e) {
             e.preventDefault();
-            alert('Nachricht wurde gesendet! Ich melde mich schnellstmöglich bei dir.');
             this.reset();
+            const message = document.getElementById('form-success');
+            if (message) {
+                message.style.display = 'block';
+                setTimeout(() => {
+                    message.style.display = 'none';
+                }, 5000);
+            }
         });
+    }
+
+    const yearSpan = document.getElementById('currentYear');
+    if (yearSpan) {
+        yearSpan.textContent = new Date().getFullYear();
     }
 });
 
@@ -232,6 +241,8 @@ document.addEventListener('DOMContentLoaded', function() {
 // Initialize
 document.addEventListener('DOMContentLoaded', function() {
     createParticles();
-    generateCalendar();
+    if (document.getElementById('calendarGrid')) {
+        generateCalendar();
+    }
     animateOnScroll();
 });
