@@ -131,20 +131,18 @@ function openModal(type) {
                 <p><strong>Angaben gemäß § 5 TMG:</strong></p>
                 <p>AnVo Studio<br>
                 Luna Müller<br>
-                Kunststraße 42<br>
-                12345 Musterstadt</p>
+                Leipzig Südvorstadt</p>
                 
                 <p><strong>Kontakt:</strong><br>
-                Telefon: +49 123 456 7890<br>
-                E-Mail: info@anvostudio.de</p>
+                Telefon: Auf Anfrage<br>
+                E-Mail: anna.vogelw@googlemail.com</p>
                 
                 <p><strong>Umsatzsteuer-ID:</strong><br>
                 Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz: DE123456789</p>
                 
                 <p><strong>Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:</strong><br>
                 Luna Müller<br>
-                Kunststraße 42<br>
-                12345 Musterstadt</p>
+                Leipzig Südvorstadt</p>
             `;
             break;
         case 'datenschutz':
