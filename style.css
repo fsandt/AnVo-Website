@@ -432,6 +432,13 @@ nav.scrolled {
     border-color: #ffffff;
 }
 
+/* Form success message */
+.form-success {
+    color: #66bb6a;
+    margin-top: 1rem;
+    display: none;
+}
+
 /* Footer */
 footer {
     background: #000000;
