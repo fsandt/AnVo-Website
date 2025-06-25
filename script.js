@@ -134,13 +134,9 @@ function openModal(type) {
                 Leipzig Südvorstadt</p>
                 
                 <p><strong>Kontakt:</strong><br>
-< triy3a-codex/codebasis-für-anfänger-erklären
-                Telefon: Auf Anfrage<br>
-                E-Mail: anna.vogelw@googlemail.com</p>
-=======
-                Telefon: +49 123 456 7890<br>
-                E-Mail: info@anvostudio.de</p>
-> main
+                Telefon: Auf Anfrage / +49 123 456 7890<br>
+                E-Mail: anna.vogelw@googlemail.com / info@anvostudio.de</p>
+
                 
                 <p><strong>Umsatzsteuer-ID:</strong><br>
                 Umsatzsteuer-Identifikationsnummer gemäß §27a Umsatzsteuergesetz: DE123456789</p>

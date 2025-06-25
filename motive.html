@@ -39,9 +39,30 @@
     </section>
 
     <footer>
+< xcmbpy-codex/codebasis-für-anfänger-erklären
+        <div class="footer-links">
+            <a href="#impressum" onclick="openModal('impressum')">Impressum</a>
+            <a href="#datenschutz" onclick="openModal('datenschutz')">Datenschutz</a>
+            <a href="#agb" onclick="openModal('agb')">AGB</a>
+        </div>
         <p>&copy; <span id="currentYear"></span> AnVo. Alle Rechte vorbehalten.</p>
     </footer>
 
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modal-body">
+                <!-- Modal content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+=======
+        <p>&copy; <span id="currentYear"></span> AnVo. Alle Rechte vorbehalten.</p>
+    </footer>
+
+> main
     <script src="script.js"></script>
     <script src="openai.js"></script>
 </body>
